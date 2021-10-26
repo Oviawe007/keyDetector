@@ -1,10 +1,10 @@
 
+(function(){
+    "use strict";
 
-
-
-const box = document.querySelector('.box');
-document.addEventListener("keydown", function(e){
-    let space = "space".toUpperCase();
+    const box = document.querySelector('.box');
+    document.addEventListener("keydown", function(e){
+    const space = "space".toUpperCase();
 
     box.querySelector('.key-code').innerHTML = e.keyCode;
     box.querySelector('.key-name').innerHTML = e.key.toUpperCase();
@@ -16,8 +16,10 @@ document.addEventListener("keydown", function(e){
         box.querySelector('.key-name').innerHTML = space;
     }
     box.classList.add('active');
-    console.log(e);
+    //console.log(e);
+    
+    });
 
-    
-    
-});
+}());
+
+
